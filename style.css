@@ -13,36 +13,43 @@ h1 {
 
 .choices {
     display: flex;
-    gap: 3rem;
     justify-content: center;
+    align-items: center;
+    /* gap: 3rem; */
+    gap: 7vmin;
     margin-top: 5rem;
 }
 
 .choice {
-    width: 165px;
-    height: 210px;
+    width: 25vmin;
+    height: 25vmin;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+
 }
 
 img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 23vmin;
+    height: 23vmin;
+    object-fit: cover; 
     border-radius: 50%;
 }
-img:hover {
+
+.choice:hover {
     cursor: pointer;
-    border: 5px solid #081b31;
+    background-color: #081b31;
 }
 
+.choices-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vmin;
+    gap: 21vmin;
+}
 .img-name {
-    margin-top: 1.2rem;
-    font-size: 2rem;
+    font-size: 5vmin;
 }
 
 .score-board {
@@ -51,6 +58,13 @@ img:hover {
     gap: 5rem;
     margin-top: 3rem;
     font-size: 2rem;
+}
+
+.userscore {
+    color: blue;
+}
+.compscore {
+    color: red;
 }
 
 #user-score, #comp-score {
@@ -64,7 +78,7 @@ img:hover {
     display: inline;
     background-color: #081b31;
     color: #fff;
-    font-size: 2rem;
+    font-size: 5vmin;
     padding: 1rem;
     border-radius: 1rem;
 }
