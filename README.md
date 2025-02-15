@@ -1,2 +1,2 @@
-# stone-paper-scissor-game
-stone paper scissor game made using html, css and javascript
+# rock-paper-scissor-game
+rock, paper, scissor game made using html, css and javascript
