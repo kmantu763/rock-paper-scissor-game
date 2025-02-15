@@ -7,15 +7,15 @@
 h1 {
     background-color: #081b31;
     color: #fff;
-    height: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    line-height: 4rem;
     text-align: center;
     font-size: 7vmin;
 }
 
 .navbar {
     background-color: #8a95a5;
-    height: 4.5rem;
+    height: 3.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,10 +24,10 @@ h1 {
 
 .btn {
     width: 18vmin;
-    height: 3.5rem;
+    height: 3rem;
     border: none;
     border-radius: 5px;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     background-color: #b9c6ae;
 }
 .btn:hover {
@@ -41,7 +41,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 7vmin;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 .choice {
@@ -96,7 +96,7 @@ img {
 }
 
 .msg-container {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 #msg {
