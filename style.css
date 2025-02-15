@@ -1,14 +1,39 @@
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
+
 }
 
 h1 {
     background-color: #081b31;
     color: #fff;
-    height: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #8a95a5;
+    height: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 15vmin;
+    height: 6vmin;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.5vmin;
+    /* font-weight: bolder; */
+    background-color: #b9c6ae;
+}
+.btn:hover {
+    cursor: pointer;
+    opacity: 80%;
+    border: 2px solid black;
 }
 
 .choices {
@@ -17,7 +42,7 @@ h1 {
     align-items: center;
     /* gap: 3rem; */
     gap: 7vmin;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .choice {
@@ -45,7 +70,7 @@ img {
 .choices-name {
     display: flex;
     justify-content: center;
-    margin-top: 2vmin;
+    margin-top: 1vmin;
     gap: 21vmin;
 }
 .img-name {
@@ -56,15 +81,15 @@ img {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 2rem;
 }
 
 .userscore {
-    color: blue;
+    color: #24b09b;
 }
 .compscore {
-    color: red;
+    color: #730071;
 }
 
 #user-score, #comp-score {
@@ -73,6 +98,7 @@ img {
 
 .msg-container {
     margin-top: 3rem;
+    text-align: center;
 }
 #msg {
     display: inline;
@@ -81,4 +107,64 @@ img {
     font-size: 5vmin;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+#rule {
+    list-style-position: inside;
+    margin: 3vmin;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 15vmin;
+    font-size: 3vmin;
+}
+
+table {
+    width: 100vmin;
+    height: 72vmin;
+}
+
+th {
+    height: 8vmin;
+}
+
+td {
+    height: 4vmin;
+    text-align: center;
+}
+
+.win {
+    background-color: green;
+    color: #fff;
+}
+.lose {
+    background-color: red;
+}
+.draw {
+    background-color: gray;
+    /* color: white; */
+}
+h4 {
+    font-size: 5vmin;
+}
+
+.about-game {
+    font-size: 3vmin;
+}
+li {
+    font-size: 3vmin;
+}
+
+.wincondition{
+    text-align: center;
+}
+.table {
+    display: flex;
+    justify-content: center;
 }

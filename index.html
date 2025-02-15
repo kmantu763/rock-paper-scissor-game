@@ -8,40 +8,127 @@
 </head>
 <body>
     <h1>Rock Paper Scissor Game</h1>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images/rock.png" alt="rock_img">
-        </div>
+    <div class="navbar">
+        <button class="btn" id="new-game">New Game</button>
+        <button class="btn" id="game-rule">Game Rule</button>
+    </div>
 
-        <div class="choice" id="paper">
-            <img src="images/paper.png" alt="paper_img">
+    <div class="main">
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="images/rock.png" alt="rock_img">
+            </div>
+    
+            <div class="choice" id="paper">
+                <img src="images/paper.png" alt="paper_img">
+            </div>
+    
+            <div class="choice" id="scissor">
+                <img src="images/scissors.png" alt="scissor_img">
+            </div>
         </div>
-
-        <div class="choice" id="scissor">
-            <img src="images/scissors.png" alt="scissor_img">
+    
+        <div class="choices-name">
+            <p class="img-name">Rock</p>
+            <p class="img-name">Paper</p>
+            <p class="img-name">Scissor</p>
+        </div>
+    
+        <div class="score-board">
+            <div class="userscore">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+    
+            <div class="compscore">
+                <p id="comp-score">0</p>
+                <p>Comp</p>
+            </div>
+        </div>
+    
+        <div class="msg-container">
+            <p id="msg">Play your move</p>
         </div>
     </div>
 
-    <div class="choices-name">
-        <p class="img-name">Rock</p>
-        <p class="img-name">Paper</p>
-        <p class="img-name">Scissor</p>
-    </div>
-
-    <div class="score-board">
-        <div class="userscore">
-            <p id="user-score">0</p>
-            <p>You</p>
+    <div class="hide" id="rule">
+        <h4>About Game :-</h4>
+        <p class="about-game">Rock, paper, scissors is a game played between two players. Here ONE Player is "YOU" and another Player is your "Computer". The goal is to beat the computer by choosing correct things, rock, paper, or scissors.</p>
+        <h4>How to Play :-</h4>
+        <ol>
+            <li>First you choose anything Rock, Paper or Scissor.
+            </li>
+            <li>Computer will also choose Rock, Paper or Scissor randomly.
+            </li>
+            <li>Rock blunts (beats) Scissor, Scissor cut (beats) Paper, and Parer wraps (beats) Rock.</li>
+            <li>If both choose same thing , no winner, game will Draw.</li>
+        </ol>
+        <h4 class="wincondition">Winning conditions :-</h4>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User choice</th>
+                        <th>Computer choice</th>
+                        <th>User</th>
+                        <th>Computer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rock</td>
+                        <td>paper</td>
+                        <td class="lose">Lose!</td>
+                        <td class="win">Win!</td>
+                    </tr>
+                    <tr>
+                        <td>Rock</td>
+                        <td>Scissor</td>
+                        <td class="win">Win!</td>
+                        <td class="lose">Lose!</td>
+                    </tr>
+                    <tr>
+                        <td>Paper</td>
+                        <td>Rock</td>
+                        <td class="win">Win!</td>
+                        <td class="lose">Lose!</td>
+                    </tr>
+                    <tr>
+                        <td>Paper</td>
+                        <td>Scissor</td>
+                        <td class="lose">Lose!</td>
+                        <td class="win">Win!</td>
+                    </tr>
+                    <tr>
+                        <td>Scissor</td>
+                        <td>Rock</td>
+                        <td class="lose">Lose!</td>
+                        <td class="win">Win!</td>
+                    </tr>
+                    <tr>
+                        <td>Scissor</td>
+                        <td>paper</td>
+                        <td class="win">win!</td>
+                        <td class="lose">Lose!</td>
+                    </tr>
+                    <tr>
+                        <td>Rock</td>
+                        <td>Rock</td>
+                        <td colspan="2" class="draw">Draw!</td>
+                    </tr>
+                    <tr>
+                        <td>Paper</td>
+                        <td>Paper</td>
+                        <td colspan="2" class="draw">Draw!</td>
+                    </tr>
+                    <tr>
+                        <td>Scissor</td>
+                        <td>Scissor</td>
+                        <td colspan="2" class="draw">Draw!</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <div class="compscore">
-            <p id="comp-score">0</p>
-            <p>Comp</p>
-        </div>
-    </div>
-
-    <div class="msg-container">
-        <p id="msg">Play your move</p>
     </div>
 
     <script src="app.js"></script>
